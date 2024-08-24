@@ -2,22 +2,22 @@ import { details } from "../constains/Index";
 
 const SubHeroSection = () => {
   return (
-    <section className="flex  justify-center  cursor-pointer items-center mt-20 ">
+    <section className="flex items-center justify-center mt-20 cursor-pointer ">
       <br />
       {details.map((detail, index) => (
         
         <div
           key={index}
-          className="w-full  sm:w-1/2 lg:w-1/3"
+          className="w-full sm:w-1/2 lg:w-1/3"
         >
-          <div className="flex gap-3 justify-center items-center">
-            <div className="text-xl  font-bold lg:text-4xl">{detail.number}</div>
+          <div className="flex items-center justify-center gap-3">
+            <div className="text-xl font-bold lg:text-4xl dark:text-neone-green">{detail.number}</div>
             <div>
-              <h1 className="text-[10px] lg:text-xl">{detail.detail}</h1>
+              <h1 className="text-[10px] lg:text-xl pr-4 dark:text-white">{detail.detail}</h1>
             </div>
           </div>
           <br /><br /><br /><br />
-          <hr className=" border-black" />
+          <hr className="border-black dark:border-white " />
         </div>
         
       ))}
